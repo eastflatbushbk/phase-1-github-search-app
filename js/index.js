@@ -2,6 +2,8 @@ const init = () => {
     const inputForm = document.querySelector('form');
     inputForm.addEventListener('submit', (event) => {
         event.preventDefault();
+        document.getElementById('user-list').innerHTML = "";
+        document.querySelector('#repos-list').innerHTML = "";
         const input = document.querySelector('input#search');
         console.log(input.value);
         const ghApiUrl = `https://api.github.com/users/${input.value}`
