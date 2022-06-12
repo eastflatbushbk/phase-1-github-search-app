@@ -78,7 +78,7 @@ const init = () => {
  document.querySelector('#repos-list').appendChild(p);
   }
  
-// Bonus : not completed
+// Bonus : not yet completed
 
 
 document.addEventListener('DOMContentLoaded', init);
